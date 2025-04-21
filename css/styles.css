@@ -11086,15 +11086,17 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Nagoda', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: inherit; /* or pick a specific fallback color */
+  background: none !important;
+  -webkit-text-fill-color: unset !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
 }
+
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -11210,11 +11212,20 @@ body {
 
 .footer {
   padding: 5rem 0;
-}
-.text-dark {
-  color: #191A1C;
+}.text-dark-custom {
+  color: #191A1C !important;
+  font-family: 'Nagoda', sans-serif;
 }
 
-.text-accent {
-  color: #FA8603;
+.text-accent-custom {
+  color: #FA8603 !important;
+  font-family: 'Nagoda', sans-serif;
+}
+
+/* Removes gradient clip for spans */
+.no-gradient {
+  background: none !important;
+  -webkit-text-fill-color: unset !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
 }
